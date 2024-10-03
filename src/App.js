@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style/header.css';
 import './style/general.css';
 import './style/herosection.css';
@@ -29,10 +29,14 @@ import reviewImg from './imagess/image.png';
 import blogImg1 from './imagess/blog-3.png';
 import blogImg2 from './imagess/blog-1.png';
 import blogImg3 from './imagess/blog-2.png';
+import { IoMdClose } from "react-icons/io";
+import { IoMdMenu } from "react-icons/io"
 
 function App() {
-  const Toggle = () => {
-    // Your Toggle logic here
+  const [menuOpen, setMenuOpen] = useState(false); 
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen); 
   };
 
   return (
@@ -40,25 +44,23 @@ function App() {
       <header>
         <div className="size-header">
           <div className="navbar">
-            <a href="index.html" className="logo-link">
+            <a href="#" className="logo-link">
               <img src={logo} alt="Logo" className="logo" />
             </a>
-            <nav>
+            {/* Navigation menu */}
+            <nav className={`nav-links ${menuOpen ? 'block' : 'hidden'}`} >
               <ul className="menu-list-java">
                 <li><a className="search-home active-dash" href="#herosection">Home</a></li>
                 <li><a className="search-home color-tex" href="#skills-section">Skills-Page</a></li>
                 <li><a className="search-home color-tex" href="#portifolio">Portfolio</a></li>
-                <li><a className="search-home color-tex" href="#blogs">Blogs</a></li>
-                <li><a className="search-home color-tex" href="#contact">Contact Us</a></li> 
+                {/* <li><a className="search-home color-tex" href="#blogs">Blogs</a></li> */}
+                <li><a className="search-home color-tex" href="#contact">Contact Us</a></li>
               </ul>
             </nav>
-            <img
-              className="menu-icon"
-              src={menuIcon}
-              alt="menu-button"
-              onClick={Toggle}
-            />
-      
+            {/* Menu icon */}
+            <div className="menu-icon" onClick={toggleMenu}>
+              {menuOpen ? <IoMdClose size={24} /> : <IoMdMenu size={24} />}
+            </div>
           </div>
         </div>
       </header>
@@ -83,7 +85,10 @@ function App() {
               <div className="socila-media hero-social-media">
                 <a href="#"><img src={facebookIcon} alt="Facebook" /></a>
                 <a href="https://www.instagram.com/sandrineuwumukiza/?hl=en"><img src={instagramIcon} alt="Instagram" /></a>
-                <a href="https://wa.me/message/DIJQRHQVTQC5D1"><img src={whatsappIcon} alt="WhatsApp" /></a>
+                <a href={`https://wa.me/250788216317`} target="_blank" rel="noopener noreferrer">
+  <img src={whatsappIcon} alt="WhatsApp" />
+</a>
+
                 <a href="#"><img src={twitterIcon} alt="Twitter" /></a>
                 <a href="https://github.com/sandrineuwumukiza"><img src={githubIcon} alt="GitHub" /></a>
                 <a href="https://www.linkedin.com/in/sandrineuwumukiza"><img src={linkedinIcon} alt="LinkedIn" /></a>
@@ -187,77 +192,6 @@ function App() {
           </div>
         </div>
       </div>
-
-      <section id="review" className="skills-section">
-        <div id="blogs"></div>
-        <p className="skills-bottom">LATEST BLOGS</p>
-      </section>
-      <section id="blogs" className="blog-container">
-         <p className="skills-title review ">BLOGS</p>
-         <div className="scroller-section">
-          <div className="button-left-home">&#8592;</div>
-          <div id="blog-card-store" className="blogs-with-button">
-            <div className="loader-button"></div>
-            <a href="#" className="link-blog">
-              <div class="blog-review">
-                <img src={blogImg3}/>
-                <div className="like-blog">
-                  <p>•11 Like</p>
-                  <p>•22 com</p>
-                </div>
-                <p className="blog-title">Reasons Business needs Agency.</p>
-                <p className="blog-description">Design Club is a digital agency specialized in ecommerce. We build scalable, high-end web shops.</p>
-            </div>
-            </a>
-            <a href="#" className="link-blog">
-              <div className="blog-review">
-                <img src={blogImg1}/>
-                <div className="like-blog">
-                  <p>•11 Like</p>
-                  <p>•22 com</p>
-                </div>
-                <p className="blog-title">Reasons Business needs Agency.</p>
-                <p className="blog-description">Design Club is a digital agency specialized in ecommerce. We build scalable, high-end web shops.</p>
-            </div>
-            </a>
-            <a href="blogs.html" className="link-blog">
-              <div className="blog-review">
-                <img src={blogImg2}/>
-                <div clasclassName="like-blog">
-                  <p>•11 Like</p>
-                  <p>•22 com</p>
-                </div>
-                <p className="blog-title">Reasons Business needs Agency.</p>
-                <p className="blog-description">Design Club is a digital agency specialized in ecommerce. We build scalable, high-end web shops.</p>
-            </div>
-            </a>
-            <a href="#" className="link-blog">
-              <div className="blog-review">
-                <img src={blogImg3}/>
-                <div className="like-blog">
-                  <p>•11 Like</p>
-                  <p>•22 com</p>
-                </div>
-                <p className="blog-title">Reasons Business needs Agency.</p>
-                <p className="blog-description">Design Club is a digital agency specialized in ecommerce. We build scalable, high-end web shops.</p>
-            </div>
-            </a>
-            <a href="#" className="link-blog">
-              <div className="blog-review">
-                <img src={blogImg1}/>
-                <div className="like-blog">
-                  <p>•11 Like</p>
-                  <p>•22 com</p>
-                </div>
-                <p className="blog-title">Reasons Business needs Agency.</p>
-                <p className="blog-description">Design Club is a digital agency specialized in ecommerce. We build scalable, high-end web shops.</p>
-            </div>
-            </a> 
-          </div>
-         <div class="button-right-home">&#8594;</div>
-        </div>
-        <div id="contact"></div>
-      </section>
       <section  className="blog-container ">
         <p className="skills-title  ">Contact PAge</p>
         <p className="contact-desicription ">Fill out the form and a member from our sales team will get back to you within 24 hours, or scroll down for more ways to get in touch.</p>  
