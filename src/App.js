@@ -9,15 +9,15 @@ import './style/blogs.css';
 import './style/footer.css';
 import './style/contact.css';
 import logo from './imagess/L-removebg-preview.png';
-import menuIcon from './imagess/icons/menu-svgrepo-com.svg';
+// import menuIcon from './imagess/icons/menu-svgrepo-com.svg';
 import profilePic from './imagess/220003712-removebg-preview.png';
 import facebookIcon from './imagess/icons/facebook-color-svgrepo-com 1.png';
 import instagramIcon from './imagess/icons/instagram-1-svgrepo-com 1.png';
 import whatsappIcon from './imagess/icons/whatsapp-svgrepo-com (1) 1.png';
-import twitterIcon from './imagess/icons/twitter-1-svgrepo-com 1.png';
+// import twitterIcon from './imagess/icons/twitter-1-svgrepo-com 1.png';
 import githubIcon from './imagess/icons/github-svgrepo-com.png';
 import linkedinIcon from './imagess/icons/linked-in.png';
-import youtubeIcon from './imagess/icons/youtube-svgrepo-com.png';
+// import youtubeIcon from './imagess/icons/youtube-svgrepo-com.png';
 import skillIcon1 from './imagess/icons/react-icons 1.png';
 import skillIcon2 from './imagess/icons/Frame.png';
 import skillIcon3 from './imagess/icons/jsname.png';
@@ -25,10 +25,10 @@ import portfolioImg1 from './imagess/Rectangle 19768.png';
 import phone from './imagess/icons/phone.png';
 import message from './imagess/icons/message.png'
 import portfolioImg2 from './imagess/recatngula2.png';
-import reviewImg from './imagess/image.png';
-import blogImg1 from './imagess/blog-3.png';
-import blogImg2 from './imagess/blog-1.png';
-import blogImg3 from './imagess/blog-2.png';
+// import reviewImg from './imagess/image.png';
+// import blogImg1 from './imagess/blog-3.png';
+// import blogImg2 from './imagess/blog-1.png';
+// import blogImg3 from './imagess/blog-2.png';
 import { IoMdClose } from "react-icons/io";
 import { IoMdMenu } from "react-icons/io"
 
@@ -83,7 +83,8 @@ function App() {
             <div>
               <p className="hero-social-media">SOCIAL MEDIA :</p>
               <div className="socila-media hero-social-media">
-                <a href="#"><img src={facebookIcon} alt="Facebook" /></a>
+              {/* <a href=""><img src={twitterIcon}/></a> */}
+                <a href="https://www.facebook.com/share/1cqfwyLRbs/?mibextid=wwXIfr"><img src={facebookIcon} alt="Facebook" /></a>
                 <a href="https://www.instagram.com/sandrineuwumukiza/?hl=en"><img src={instagramIcon} alt="Instagram" /></a>
                 <a href={`https://wa.me/250788216317`} target="_blank" rel="noopener noreferrer">
   <img src={whatsappIcon} alt="WhatsApp" />
@@ -219,14 +220,14 @@ function App() {
             <p className="title-contact">Contact US :</p>
             <p className="contact-description">If you're an existing customer or require assistance with billing, please reach out to our support team.</p>
             <p className="contact-description">KIGALI RWANDA    ||   GASABO  ||    GASANZE</p>
-            <p class="title-contact">PHONE :</p>
+            <p className="title-contact">PHONE :</p>
             <p className="contact-description">+250-788-216-317</p>
             <p className="title-contact">SOCIAL MEDIA :</p>
             <div className="socila-media">
-              <a href=""><img src={facebookIcon}/></a>
-              <a href=""><img src={instagramIcon}/></a>
+              <a href="https://www.facebook.com/share/1cqfwyLRbs/?mibextid=wwXIfr"><img src={facebookIcon}/></a>
+              <a href="https://www.facebook.com/share/1cqfwyLRbs/?mibextid=wwXIfr"><img src={instagramIcon}/></a>
               <a href="https://wa.me/message/DIJQRHQVTQC5D1"><img src={whatsappIcon}/></a>
-              <a href=""><img src={twitterIcon}/></a>
+              {/* <a href=""><img src={twitterIcon}/></a> */}
             </div>
           </div>
           <div className="right-section">
@@ -247,7 +248,7 @@ function App() {
             </div>
             <div className="form-right">
               <p className="title-form">Message :</p>
-              <textarea id="message-to-admin" class="longText" name="longText" rows="4" cols="49"></textarea>
+              <textarea id="message-to-admin" className="longText" name="longText" rows="4" cols="49"></textarea>
             </div>
             <div className="validation-message-response" style={{backgroundColor: 'transparent',color: 'white', textAlign: 'center',display: 'none'}}>thank you for the message</div>
             <div className=" button-form">
