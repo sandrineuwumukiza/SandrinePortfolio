@@ -89,15 +89,21 @@ function App() {
   <img src={whatsappIcon} alt="WhatsApp" />
 </a>
 
-                <a href="#"><img src={twitterIcon} alt="Twitter" /></a>
+                {/* <a href="#"><img src={twitterIcon} alt="Twitter" /></a> */}
                 <a href="https://github.com/sandrineuwumukiza"><img src={githubIcon} alt="GitHub" /></a>
                 <a href="https://www.linkedin.com/in/sandrineuwumukiza"><img src={linkedinIcon} alt="LinkedIn" /></a>
                 {/* <a href="https://www.youtube.com/@CodeYourLife-zx3et"><img src={youtubeIcon} alt="YouTube" /></a> */}
               </div>
             </div>
-            <button type="button" className="button-hero">
-              <div className="insider-btn"></div>Link me &rarr;
-            </button>
+           <a
+  href="https://drive.google.com/file/d/1qI9HBBtQufZewc15bbfANyPVaiyNctDY/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="button-hero"
+>
+  <div className="insider-btn"></div>
+  Link me &rarr;
+            </a>
           </div>
           <div className="col-2">
             <img src={profilePic} className="profile-controller" alt="Profile" />
@@ -153,7 +159,10 @@ function App() {
       <div className="header-flexer">
         <div className="portifolio-container">
           <div className="gallery">
-          <a href="#">
+          <a href="https://drive.google.com/file/d/1qI9HBBtQufZewc15bbfANyPVaiyNctDY/view?usp=sharing"
+          target="_blank"
+  rel="noopener noreferrer"
+  >
               <div className="card-portifolio">
                 <img src={portfolioImg1} className="image-portifolio" alt="Portfolio 2" />
                 <div className="card-text">
@@ -162,7 +171,10 @@ function App() {
                 </div>
               </div>
             </a>
-            <a href="#">
+            <a href="https://drive.google.com/file/d/1qI9HBBtQufZewc15bbfANyPVaiyNctDY/view?usp=sharing"
+          target="_blank"
+  rel="noopener noreferrer"
+  >
               <div className="card-portifolio">
                 <img src={portfolioImg2} className="image-portifolio" alt="Portfolio 2" />
                 <div className="card-text">
@@ -171,7 +183,10 @@ function App() {
                 </div>
               </div>
             </a>
-            <a href="#">
+            <a href="https://drive.google.com/file/d/1qI9HBBtQufZewc15bbfANyPVaiyNctDY/view?usp=sharing"
+          target="_blank"
+  rel="noopener noreferrer"
+  >
               <div className="card-portifolio">
                 <img src={portfolioImg2} className="image-portifolio" alt="Portfolio 1" />
                 <div className="card-text">
@@ -180,7 +195,10 @@ function App() {
                 </div>
               </div>
             </a>
-            <a href="#">
+            <a href="https://drive.google.com/file/d/1qI9HBBtQufZewc15bbfANyPVaiyNctDY/view?usp=sharing"
+          target="_blank"
+  rel="noopener noreferrer"
+  >
               <div className="card-portifolio">
                 <img src={portfolioImg1} className="image-portifolio" alt="Portfolio 2" />
                 <div className="card-text">
@@ -193,6 +211,7 @@ function App() {
         </div>
       </div>
       <section  className="blog-container ">
+        <div id="contas_us"></div>
         <p className="skills-title  ">Contact PAge</p>
         <p className="contact-desicription ">Fill out the form and a member from our sales team will get back to you within 24 hours, or scroll down for more ways to get in touch.</p>  
         <div className="contact-form review">
@@ -254,7 +273,7 @@ function App() {
                 <a className="logo-link" href="">
                   <img src={logo} alt="" className="logo" />
                 </a>
-                <p className="footer-left-text">Archetypes of the MODERN. identity are reinvented through details.</p>
+                <p className="footer-left-text">Please contact me! </p>
                 <p className="phone-footer"><img src={phone} className="icons-footer" />+250-788-216-317</p>
                 <p className="phone-footer"><img src={message} className="icons-footer"/>+250-788-216-317</p>
               </div>
@@ -265,19 +284,19 @@ function App() {
                     <a href='#homesection'>Home</a>
                     <a href='#portifolio'>Portifolio</a>
                     <a href='##skills-section'>Skills</a>
-                    <a href='#blogs'>Blogs</a>
+                    {/* <a href='#blogs'>Blogs</a> */}
                   </div>
                 </div>
                 <div className="services-footer">
                   <h1>Services</h1>
                   <div class="links-list1">
                     <p>Graphic Design</p>
-                    <p>UXUI Design</p>
+                    <p>UX/UI Design</p>
                     <p>Social Media</p>
                 </div>
               </div>
             </div>           
-            <div className="right-footer">
+            {/* <div className="right-footer">
               <h1>Country/Region</h1>
               <form>
                 <select id="dropdown" name="dropdown">
@@ -294,7 +313,7 @@ function App() {
                   <option value="option3">Kinyarwanda</option>
               </select>
           </form>
-            </div>
+            </div> */}
           </div>
           <div className="copy-right">
           &copy; {new Date().getFullYear()} Sandrine UWUMUKIZA. All rights reserved.

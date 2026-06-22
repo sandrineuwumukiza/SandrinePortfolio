@@ -31,7 +31,7 @@ function HeroSection() {
               <a href="#"><img src={facebookIcon} alt="Facebook" /></a>
               <a href="https://www.instagram.com/tchamierenest/?hl=en"><img src={instagramIcon} alt="Instagram" /></a>
               <a href="https://wa.me/message/DIJQRHQVTQC5D1"><img src={whatsappIcon} alt="WhatsApp" /></a>
-              <a href="#"><img src={twitterIcon} alt="Twitter" /></a>
+              {/* <a href="#"><img src={twitterIcon} alt="Twitter" /></a> */}
               <a href="https://github.com/sandrineuwumukiza"><img src={githubIcon} alt="GitHub" /></a>
               <a href="https://www.linkedin.com/uwumukizasandrine"><img src={linkedinIcon} alt="LinkedIn" /></a>
             </div>
