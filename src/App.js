@@ -44,7 +44,7 @@ function App() {
       <header>
         <div className="size-header">
           <div className="navbar">
-            <a href="#" className="logo-link">
+            <a href="#herosection" className="logo-link">
               <img src={logo} alt="Logo" className="logo" />
             </a>
             {/* Navigation menu */}
@@ -83,14 +83,11 @@ function App() {
             <div>
               <p className="hero-social-media">SOCIAL MEDIA :</p>
               <div className="socila-media hero-social-media">
-              {/* <a href=""><img src={twitterIcon}/></a> */}
                 <a href="https://www.facebook.com/share/1cqfwyLRbs/?mibextid=wwXIfr"><img src={facebookIcon} alt="Facebook" /></a>
                 <a href="https://www.instagram.com/sandrineuwumukiza/?hl=en"><img src={instagramIcon} alt="Instagram" /></a>
                 <a href={`https://wa.me/250788216317`} target="_blank" rel="noopener noreferrer">
   <img src={whatsappIcon} alt="WhatsApp" />
 </a>
-
-                {/* <a href="#"><img src={twitterIcon} alt="Twitter" /></a> */}
                 <a href="https://github.com/sandrineuwumukiza"><img src={githubIcon} alt="GitHub" /></a>
                 <a href="https://www.linkedin.com/in/sandrineuwumukiza"><img src={linkedinIcon} alt="LinkedIn" /></a>
                 {/* <a href="https://www.youtube.com/@CodeYourLife-zx3et"><img src={youtubeIcon} alt="YouTube" /></a> */}
@@ -224,9 +221,9 @@ function App() {
             <p className="contact-description">+250-788-216-317</p>
             <p className="title-contact">SOCIAL MEDIA :</p>
             <div className="socila-media">
-              <a href="https://www.facebook.com/share/1cqfwyLRbs/?mibextid=wwXIfr"><img src={facebookIcon}/></a>
-              <a href="https://www.facebook.com/share/1cqfwyLRbs/?mibextid=wwXIfr"><img src={instagramIcon}/></a>
-              <a href="https://wa.me/message/DIJQRHQVTQC5D1"><img src={whatsappIcon}/></a>
+              <a href="https://www.facebook.com/share/1cqfwyLRbs/?mibextid=wwXIfr"><img src={facebookIcon} alt="Facebook"/></a>
+              <a href="https://www.facebook.com/share/1cqfwyLRbs/?mibextid=wwXIfr"><img src={instagramIcon} alt="Instagram"/></a>
+              <a href="https://wa.me/message/DIJQRHQVTQC5D1"><img src={whatsappIcon} alt="WhatsApp"/></a>
               {/* <a href=""><img src={twitterIcon}/></a> */}
             </div>
           </div>
@@ -257,10 +254,9 @@ function App() {
             <div className="socila-hide">
               <p className="title-contact">SOCIAL MEDIA :</p>
               <div className="socila-media">
-                <a href=""><img src="./imagess/icons/facebook-color-svgrepo-com 1.png"/></a>
-                <a href="https://www.instagram.com/sandrineuwumukiza/?hl=en"><img src="./imagess/icons/instagram-1-svgrepo-com 1.png"/></a>
-                <a href="https://wa.me/message/DIJQRHQVTQC5D1"><img src="./imagess/icons/whatsapp-svgrepo-com (1) 1.png"/></a>
-                <a href=""><img src="./imagess/icons/twitter-1-svgrepo-com 1.png"/></a>
+                <a href="https://www.facebook.com/share/1cqfwyLRbs/?mibextid=wwXIfr"><img src="./imagess/icons/facebook-color-svgrepo-com 1.png" alt="Facebook"/></a>
+                <a href="https://www.instagram.com/sandrineuwumukiza/?hl=en"><img src="./imagess/icons/instagram-1-svgrepo-com 1.png" alt="Instagram"/></a>
+                <a href="https://wa.me/message/DIJQRHQVTQC5D1"><img src="./imagess/icons/whatsapp-svgrepo-com (1) 1.png" alt="WhatsApp"/></a>
               </div>
             </div>
           </div>
@@ -271,12 +267,12 @@ function App() {
         <div className="header-flexer footer-container">
             <div className="footer-text">
               <div className="section-logo-footer">
-                <a className="logo-link" href="">
+                <a className="logo-link" href="#herosection">
                   <img src={logo} alt="" className="logo" />
                 </a>
                 <p className="footer-left-text">Please contact me! </p>
-                <p className="phone-footer"><img src={phone} className="icons-footer" />+250-788-216-317</p>
-                <p className="phone-footer"><img src={message} className="icons-footer"/>+250-788-216-317</p>
+                <p className="phone-footer"><img src={phone} className="icons-footer" alt="Phone"/>+250-788-216-317</p>
+                <p className="phone-footer"><img src={message} className="icons-footer" alt="Phone"/>+250-788-216-317</p>
               </div>
               <div className="betweeen-footer">
                 <div className="pages-footer">
@@ -290,7 +286,7 @@ function App() {
                 </div>
                 <div className="services-footer">
                   <h1>Services</h1>
-                  <div class="links-list1">
+                  <div className="links-list1">
                     <p>Graphic Design</p>
                     <p>UX/UI Design</p>
                     <p>Social Media</p>
