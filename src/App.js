@@ -89,12 +89,12 @@ function App() {
   <img src={whatsappIcon} alt="WhatsApp" />
 </a>
                 <a href="https://github.com/sandrineuwumukiza"><img src={githubIcon} alt="GitHub" /></a>
-                <a href="https://www.linkedin.com/in/sandrineuwumukiza"><img src={linkedinIcon} alt="LinkedIn" /></a>
+                <a href="https://www.linkedin.com/in/sandrine-uwumukiza/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMOVU4fwdT%2BOEQcikRyj3bg%3D%3D"><img src={linkedinIcon} alt="LinkedIn" /></a>
                 {/* <a href="https://www.youtube.com/@CodeYourLife-zx3et"><img src={youtubeIcon} alt="YouTube" /></a> */}
               </div>
             </div>
            <a
-  href="https://www.linkedin.com/in/sandrineuwumukiza"
+  href="https://www.linkedin.com/in/sandrine-uwumukiza/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMOVU4fwdT%2BOEQcikRyj3bg%3D%3D"
   target="_blank"
   rel="noopener noreferrer"
   className="button-hero"
