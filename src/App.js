@@ -59,7 +59,7 @@ function App() {
             </nav>
             {/* Menu icon */}
             <div className="menu-icon" onClick={toggleMenu}>
-              {menuOpen ? <IoMdClose size={24} /> : <IoMdMenu size={24} />}
+              {menuOpen ? <IoMdClose  size={24} /> : <IoMdMenu className="menu-icon-menu" size={24} />}
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ function App() {
               </div>
             </div>
            <a
-  href="https://drive.google.com/file/d/1qI9HBBtQufZewc15bbfANyPVaiyNctDY/view?usp=sharing"
+  href="https://www.linkedin.com/in/sandrineuwumukiza"
   target="_blank"
   rel="noopener noreferrer"
   className="button-hero"
@@ -157,7 +157,7 @@ function App() {
       <div className="header-flexer">
         <div className="portifolio-container">
           <div className="gallery">
-          <a href="https://drive.google.com/file/d/1qI9HBBtQufZewc15bbfANyPVaiyNctDY/view?usp=sharing"
+          <a href="https://github.com/sandrineuwumukiza"
           target="_blank"
   rel="noopener noreferrer"
   >
@@ -169,7 +169,7 @@ function App() {
                 </div>
               </div>
             </a>
-            <a href="https://drive.google.com/file/d/1qI9HBBtQufZewc15bbfANyPVaiyNctDY/view?usp=sharing"
+            <a href="https://github.com/sandrineuwumukiza"
           target="_blank"
   rel="noopener noreferrer"
   >
@@ -181,7 +181,7 @@ function App() {
                 </div>
               </div>
             </a>
-            <a href="https://drive.google.com/file/d/1qI9HBBtQufZewc15bbfANyPVaiyNctDY/view?usp=sharing"
+            <a href="https://github.com/sandrineuwumukiza"
           target="_blank"
   rel="noopener noreferrer"
   >
@@ -193,7 +193,7 @@ function App() {
                 </div>
               </div>
             </a>
-            <a href="https://drive.google.com/file/d/1qI9HBBtQufZewc15bbfANyPVaiyNctDY/view?usp=sharing"
+            <a href="https://github.com/sandrineuwumukiza"
           target="_blank"
   rel="noopener noreferrer"
   >
@@ -209,7 +209,7 @@ function App() {
         </div>
       </div>
       <section  className="blog-container ">
-        <div id="contas_us"></div>
+        <div id="contact"></div>
         <p className="skills-title  ">Contact PAge</p>
         <p className="contact-desicription ">Fill out the form and a member from our sales team will get back to you within 24 hours, or scroll down for more ways to get in touch.</p>  
         <div className="contact-form review">
@@ -223,8 +223,9 @@ function App() {
             <div className="socila-media">
               <a href="https://www.facebook.com/share/1cqfwyLRbs/?mibextid=wwXIfr"><img src={facebookIcon} alt="Facebook"/></a>
               <a href="https://www.facebook.com/share/1cqfwyLRbs/?mibextid=wwXIfr"><img src={instagramIcon} alt="Instagram"/></a>
-              <a href="https://wa.me/message/DIJQRHQVTQC5D1"><img src={whatsappIcon} alt="WhatsApp"/></a>
-              {/* <a href=""><img src={twitterIcon}/></a> */}
+               <a href={`https://wa.me/250788216317`} target="_blank" rel="noopener noreferrer">
+  <img src={whatsappIcon} alt="WhatsApp" /></a>
+             
             </div>
           </div>
           <div className="right-section">
@@ -254,9 +255,9 @@ function App() {
             <div className="socila-hide">
               <p className="title-contact">SOCIAL MEDIA :</p>
               <div className="socila-media">
-                <a href="https://www.facebook.com/share/1cqfwyLRbs/?mibextid=wwXIfr"><img src="./imagess/icons/facebook-color-svgrepo-com 1.png" alt="Facebook"/></a>
-                <a href="https://www.instagram.com/sandrineuwumukiza/?hl=en"><img src="./imagess/icons/instagram-1-svgrepo-com 1.png" alt="Instagram"/></a>
-                <a href="https://wa.me/message/DIJQRHQVTQC5D1"><img src="./imagess/icons/whatsapp-svgrepo-com (1) 1.png" alt="WhatsApp"/></a>
+                <a href="https://www.facebook.com/share/1cqfwyLRbs/?mibextid=wwXIfr"><img src={facebookIcon} alt="Facebook" /></a>
+                <a href="https://www.instagram.com/sandrineuwumukiza/?hl=en"><img src={instagramIcon} alt="Instagram" /></a>
+                <a href="https://wa.me/message/250788216317"> <img src={whatsappIcon} alt="WhatsApp" /></a>
               </div>
             </div>
           </div>

@@ -142,11 +142,33 @@
     .menu-icon {
       display: block;
       margin-right: 10%;
+      color: #a6a001;
+    }
+    .menu-icon-menu {
+      position: absolute;
+      margin-left: 50%;
     }
     .left-button {
       display: none;
       width: 4%;
       font-size: 6px;
     }
+    .nav-links {
+    display: none !important;
+  }
+
+  .nav-links.block {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .menu-list-java {
+    display: flex !important;
+    flex-direction: column;
+    background: rgb(61, 60, 60);
+    border-radius: 15px;
+  }
   }
   
+
